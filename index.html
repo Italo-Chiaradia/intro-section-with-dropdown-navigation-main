@@ -8,6 +8,72 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-  
+  <!-- Header -->
+  <header id="header">
+    <!-- Logo -->
+    <div class="logo"></div>
+    <!-- Nav links & buttons-->
+    <nav class="nav-container">
+      <!-- Page links Menu -->
+      <ul class="nav-menu">
+        <li class="nav-link dropdown">
+          <div class="dropdown-button container-icon">
+            <a href="#">Features</a>
+            <img src="./images/icon-arrow-down.svg" class="arrow-icon">
+          </div>
+          <div class="dropdown-content">
+            <ul class="dropdown-menu">
+              <li class="container-icon">
+                <a href="#">Todo list</a>
+                <img src="./images/icon-todo.svg" class="dropdown-icon">
+              </li>
+              <li class="container-icon">
+                <a href="#">Calendar</a>
+                <img src="./images/icon-calendar.svg" class="dropdown-icon">
+              </li>
+              <li class="container-icon">
+                <a href="#">Reminders</a>
+                <img src="./images/icon-reminders.svg" class="dropdown-icon">
+              </li>
+              <li class="container-icon">
+                <a href="#">Planning</a>
+                <img src="./images/icon-planning.svg" class="dropdown-icon">
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-link dropdown">
+          <div class="dropdown-button container-icon">
+            <a href="#">Company</a>
+            <img src="./images/icon-arrow-down.svg" class="arrow-icon">
+          </div>
+          <div class="dropdown-content">
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Our Team</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-link">
+          <a href="#">Careers</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">About</a>
+        </li>
+      </ul>
+      <!-- Page login and register buttons -->
+      <div class="nav-buttons">
+        <button type="submit" class="login btn">Login</button>
+        <button type="submit" class="register btn">Register</button>
+      </div>
+    </nav>
+  </header>
 </body>
 </html>
