@@ -1,4 +1,4 @@
-/*Reset CSS*/
+/* Reset CSS */
 *, 
 *:after,
 *:before {
@@ -7,13 +7,93 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
-    font-size: 100%;
-    list-style-type: none;
+:root {
+    font-size: 10px;
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-grey: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
 }
-
-.logo {
-    background-image: url(./images/logo.svg);
-    width: 84px;
-    height: 27px;
+body{
+    font-size: 1.8rem;
+    font-family: 'Epilogue', sans-serif;
+    list-style-type: none;
+    color: var(--medium-grey);
+}
+li {
+    list-style: none;
+}
+a {
+    color: var(--medium-grey);
+    font-size: 1.5rem;
+}
+/* Header */
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+#header .logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#header .nav-container {
+    flex: 5;
+}
+/*Header => Nav container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container .nav-menu {
+    display: flex;
+    gap: 2.5rem;
+}
+/* Nav container => Navmenu => Nav links */
+.nav-link a:hover{
+    color: var(--almost-black);
+}
+/* Nav container => Navmenu => Nav links => Dropdown */
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    position: absolute;
+    opacity: 1;
+    top: calc(100% + 1rem);
+    left: 0;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+/* Nav container => Buttons */
+.btn {
+    background-color: inherit;
+    border: 2px solid var(--medium-grey);
+    color: var(--medium-grey);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.register:hover {
+    color: var(--almost-black);
+    border: 2px solid var(--almost-black);
+}
+.login {
+    border: none;
+    margin-right: 1.5rem;
+}
+.login:hover {
+    color: var(--almost-black);
+}
+/*container icon*/
+.container-icon {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
