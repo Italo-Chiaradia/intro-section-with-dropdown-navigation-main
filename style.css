@@ -1,3 +1,7 @@
+/*
+    FAZER HAMBURGUER MENU!
+    MENU RESPONSIVO 
+*/
 /* Reset CSS */
 *, 
 *:after,
@@ -40,9 +44,10 @@ a {
     align-items: center;
 }
 #header .nav-container {
-    flex: 5;
+    flex: 8;
 }
 /*Header => Nav container */
+/*JAVASCRIPT*/
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -57,7 +62,7 @@ a {
     color: var(--almost-black);
 }
 /* Nav container => Navmenu => Nav links => Dropdown */
-/*IMPORTANTE*/
+/*JAVASCRIPT DROPDOWN*/
 .dropdown {
     position: relative;
 }
@@ -72,11 +77,13 @@ a {
     transform: translateY(-10px);
     transition: all 150ms ease-out;
 }
+.dropdown-button {
+    cursor: pointer;
+}
 .dropdown-button.active + .dropdown-content {
     opacity: 1;
     transform: translateY(10px);
 }
-
 /*Dropdown menu style*/
 .dropdown-menu {
     display: flex;
@@ -102,6 +109,7 @@ a {
     border-radius: 1.5rem;
     cursor: pointer;
     font-size: 1.5rem;
+    transition: all 100ms ease;
 }
 .register:hover {
     color: var(--almost-black);
@@ -115,8 +123,9 @@ a {
     color: var(--almost-black);
 }
 /*container icon*/
+/*JAVASCRIPT*/
 .container-icon {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .9rem;
 }

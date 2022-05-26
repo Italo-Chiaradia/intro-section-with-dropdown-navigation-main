@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="app.js" defer></script>
 </head>
 <body>
   <!-- Header -->
@@ -21,10 +22,10 @@
     <nav class="nav-container">
       <!-- Page links Menu -->
       <ul class="nav-menu">
-        <li class="nav-link dropdown">
-          <div class="dropdown-button container-icon active">
-            <a href="#">Features</a>
-            <img src="./images/icon-arrow-down.svg" class="arrow-icon">
+        <li class="nav-link dropdown" data-dropdown-container>
+          <div class="dropdown-button container-icon" data-dropdown>
+            <a href="#" data-dropdown-button>Features</a>
+            <img src="./images/icon-arrow-down.svg" class="arrow-icon 1">
           </div>
           <div class="dropdown-content">
             <ul class="dropdown-menu">
@@ -47,10 +48,10 @@
             </ul>
           </div>
         </li>
-        <li class="nav-link dropdown">
-          <div class="dropdown-button container-icon active">
-            <a href="#">Company</a>
-            <img src="./images/icon-arrow-down.svg" class="arrow-icon">
+        <li class="nav-link dropdown" data-dropdown-container>
+          <div class="dropdown-button container-icon" data-dropdown>
+            <a href="#" data-dropdown-button>Company</a>
+            <img src="./images/icon-arrow-down.svg" class="arrow-icon 2">
           </div>
           <div class="dropdown-content">
             <ul class="dropdown-menu">
